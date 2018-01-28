@@ -1,165 +1,247 @@
 
-  <!DOCTYPE html>
-<html>
-<head>
+<!DOCTYPE html>
+<html lang="en">
 <style>
-.desktop-only {
-        display:background-image;
-    }
-    
-body {
-    background-repeat: no-repeat;
-    background-position: right center;
+
+
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://toriijohnson.me/">
+
+<title>torii &#8211; editorial + design + social </title>
+<meta name='robots' content='noindex,follow' />
+<link rel='dns-prefetch' href='//s2.wp.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//s1.wp.com' />
+
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+			<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s2.wp.com\/wp-includes\/js\/wp-emoji-release.min.js?m=1505864856h&ver=4.9.1"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56794,8205,9794,65039],[55358,56794,8203,9794,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+
 	
-}
-ul {
-    list-style-type: none;
-    padding: 0px;
-    overflow: hidden;
-    background-color: #fff;
-    font-family: Raleway;
-    font-size: 13px;
-          outline-style: dotted;
-    outline-color: black;
-    outline-width: thin;
-    
-}
-li {
-    float: left;
-}
-li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 18px 14px;
-    text-decoration: none;
-}
-li a:hover {
-    background-color: #ddd4d4;
-}
-.active {
-    background-color: #685BC7;
-    font-weight: bold;
-    color: white;
-}
-body 
-{ 
-    display: block;
-    margin-top: 100px;
-  	width: 750px;
-  	margin-left: auto;
-  	margin-right: auto;
- 	text-align: center;
-    font-family: Proxima Nova;
-    font-size: 18px;
-    color: #000000;
-    
-	
-}
- 
-body:focus { 
-    outline: none;
-}
-p.small {
-    line-height: 10px;
-    
-}
-.img-circle {
-    border-radius: 50%;
-    margin-left:200px;
-}
-p.thick {
-    font-weight: bold;
-        margin-left: 135px;
-margin-right: 100px;
-text-align:justify;
-}
-p.center {
-    font-weight: bold;
-        margin-left: 100px;
-margin-right: 100px;
-text-align:center;
-}
-p.big {
-    line-height: 23px;
-    font-size: 15px; 
-  width: 450px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-text-align:justify;
-}
 </style>
+<link rel='stylesheet' id='all-css-0-1' href='https://s0.wp.com/_static/??-eJyNUe1SAjEMfCFrBgH95fgsvRJ6gX5Nkxvm3t4cB3qKVP50dpvddNPAqRiXk2ASiIMpYfCUGE7F5Wg4UsDxF3t2zE/wty3QERkOKMW6ozmzlpzSnhLJ+AVaYpcr6n0sViZFxB1ZDBhV1rLF8np1TbDXYM1M86xdVyoyGz0jDdFIrw/d+uZruKjAY7TAMgZ8SGmZURj2KtGc04m1as5zB+4Rbwf7t003SMDaarGY1WPCSlq4A1tezo5s0DWkYYmbX0s7PyVVLNZXG7/RI7bLK3PIJZnNBCnLXLyC9uzZhOysUE4/iNkHS7VlrdiF7BV6UNWC3ltXvwEfcmfDJPiI76vtar1+275sV4dPy1ZTbg==?cssminify=yes' type='text/css' media='all' />
+<script type='text/javascript' src='https://s1.wp.com/_static/??-eJyF0G0KwjAMBuAL2dXJxP0Rz1Lr60hdP2zaDT29FSYiVIVAIHkISeQcBDk95hNYmhLXjHhbUmN4JX8BYWmIKqGx5F5Ye5fg0tNaf6QRIjOiGkqtDDr7iguekwVzQZXu50rkJsL8lxmkoPRFRDDdUTuEw3vn7x9Y1MHu267fbfp2263NA675cvs='></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://toriijohnson.me/" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='shortlink' href='https://wp.me/7qru6' />
+		<!-- Custom Logo: hide header text -->
+		<style id="custom-logo-css" type="text/css">
+			.site-title, .site-description-text {
+				position: absolute;
+				clip: rect(1px, 1px, 1px, 1px);
+			}
+		</style>
+	
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="toriijohnson.me" />
+<meta property="og:description" content="editorial + design + social" />
+<meta property="og:url" content="https://toriijohnson.me/" />
+<meta property="og:site_name" content="torii" />
+<meta property="og:image" content="https://s0.wp.com/i/blank.jpg" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:site" content="@toriisavannah" />
+<meta property="fb:app_id" content="249643311490" />
+<link rel="shortcut icon" type="image/x-icon" href="https://s2.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48" />
+<link rel="icon" type="image/x-icon" href="https://s2.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48" />
+<link rel="apple-touch-icon-precomposed" href="https://s0.wp.com/i/webclip.png" />
+
+<meta name="application-name" content=“torii” />
+<meta name="description" content="editorial + design + social" />
+<style type="text/css" id="syntaxhighlighteranchor"></style>
 </head>
 
+<body class="home blog wp-custom-logo mp6 customizer-styles-applied group-blog hfeed highlander-enabled highlander-light infinite-scroll neverending">
 
+<div class="mobile-header-wrapper">
 
+	<div class="mobile-logo"></div>
 
+	<button class="overlay-toggle  menu-toggle  menu-open" aria-controls="primary-menu" aria-expanded="false">
+		<span class="screen-reader-text">Primary Menu</span>
+	</button>
+	<button class="overlay-toggle  sidebar-toggle  sidebar-open" disabled="disabled" aria-expanded="false">
+		<span class="screen-reader-text">Open Sidebar</span>
+	</button>
+</div>
 
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<div id="content" class="site-content">
+
+	<div id="primary" class="content-area">
+		<main id="main" role="main">
+			<div class="grid">
+				<div class="header grid__item">
+					
+<header id="masthead" class="site-header" role="banner">
+	<div class="site-branding">
+
+		<a href="https://toriijohnson.me/" class="custom-logo-link" rel="home" itemprop="url"><img width="650" height="220" src="https://toriisavannah.files.wordpress.com/2018/01/torii4.jpg" class="custom-logo" alt="torii" itemprop="logo" srcset="https://toriisavannah.files.wordpress.com/2018/01/torii4.jpg 630w, https://toriisavannah.files.wordpress.com/2018/01/torii4.jpg?w=150&amp;h=48 150w, https://toriisavannah.files.wordpress.com/2018/01/torii4.jpg?w=300&amp;h=96 300w" sizes="(max-width: 600px) 91vw, (max-width: 900px) 600px, (max-width: 1060px) 50vw, (max-width: 1200px) 520px, (max-width: 1400px) 43vw, 600px" data-attachment-id="881" data-permalink="https://toriisavannah.files.wordpress.com/2018/01/torii4.jpg" data-orig-size="630,201" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title=“torii_logo" /></a>
+		<h1 class="site-title">
+		<a href=“http://toriijohnson.me/” rel="home">
+			<span>torii</span>
+		</a>
+
+		</h1>
+			<p class="site-description-text">editorial + design + social</p>
+
+		
+	</div><!-- .site-branding -->
+
+	<nav id="site-navigation" class="main-navigation" role="navigation">
+		<button class="overlay-toggle  menu-toggle  menu-close" aria-expanded="false">
+			<span class="screen-reader-text">Close Primary Menu</span>
+		</button>
+
+		<ul id="primary-menu" class="nav-menu"><li id="menu-item-643" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home menu-item-643"><a href="https://gemademo.wordpress.com/?demo">Home</a></li>
+<li id="menu-item-644" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-644"><a href="http://toriijohnson.me/writing">Writing</a></li>
+<li id="menu-item-645" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-645"><a href="http://toriijohnson.me/designportfolio">Designing</a></li>
+<li id="menu-item-646" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-646"><a href="https://gemademo.wordpress.com/style-guide/?demo">Blogging</a></li>
+
+</ul>
+				<nav class="jetpack-social-navigation jetpack-social-navigation-genericons" role="navigation" aria-label="Social Links Menu">
+			<div class="menu-social-menu-container"><ul id="menu-social-menu" class="menu">
+<li id="menu-item-901" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-901"><a href="https://twitter.com/toriisavannah"><span class="screen-reader-text">Twitter</span></a></li>
+<li id="menu-item-902" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-902"><a href="https://www.instagram.com/toriisavannah/"><span class="screen-reader-text">Instagram</span></a></li>
+</ul></div>		</nav><!-- .jetpack-social-navigation -->
+			
+	</nav><!-- #site-navigation -->
+
+</header><!-- #masthead -->
+				</div><!-- .header -->
+				
 <body>
 
-<ul>
-
-  <li><a class="active" href="index.html">TORII</a></li>
-  <li><a href="publishedwork">writing</a></li>
-    <li><a href="designportfolio">designing</a></li>
-        <li><a href="blog"></a></li>
- 
-    <SOCIAL-LINKS>
-    <li style="float:right"><a href="https://www.facebook.com/profile.php?id=100000011808790">
-  <img src="https://fa707ec5abab9620c91c-e087a9513984a31bae18dd7ef8b1f502.ssl.cf1.rackcdn.com/9364495_--beauty-is-boring_t58ad6732.png" alt="facebook" style="width:12px;height:12px;border:0;">
-</a>
-<li style="float:right"><a href="https://www.instagram.com/toriisavannah/">
-  <img src="http://assets.stickpng.com/thumbs/58864ec6d27829db9cf6da58.png" alt="insta" style="width:12px;height:12px;border:0;">
-</a>
-<li style="float:right" ><a href="https://www.twitter.com/toriisavannah/">
-  <img src="http://www.megabank.tohoku.ac.jp/english/wp/wp-content/themes/megabank/common/images/twitter.png" alt="twitter" style="width:12px;height:12px;border:0;">
-</a>  
-</ul>
-
-
-<br/>  <br/>  
-
-
-<p class="center">
-
-HI THERE! I'M TORII JOHNSON.  
- 
-<br/>  <br/> 
-
-</p class="center">
-
-<p class="big">
-
-I'm passionate about creating beautiful things, whether they be written or visual art. Like any proper millennial, I'm working a regular 9-to-5 while also running a few side hustles– namely, freelance writing, graphic design, and social media management. 
-<br/> 
-<br/>
-I'm always up for an exciting new project or venture. If you'd love me to work for you, write for you, design your stuff, or run your social media and marketing, <a href="toriij13@gmail.com">email me</a>! FYI: dog pictures, beauty videos, and book recommendations always welcome.
- 
-<br/>  
-
-<br/>
-</p class="big">
-<p class="thick">
-A FEW THINGS ABOUT ME:
-</p class="thick">
-<p class="big">
-I'm a recent grad from Wesleyan University with honors in English and Feminist, Gender, & Sexuality Studies. I used most of my time at this top-ranking liberal arts institution to cultivate my obsession with reading, research, writing, overloading my schedule, and coffee. 
-<br/>
-<br/>
-My writing has been about poetry and literature, trending pop culture, social justice, astrology and readings, queerness, mythology, socioeconomic issues, music and tv, and the many intersections between all these. 
-<br/>
-<br/>
-</p class="big">
-
-<p class="center">
-Thanks for stopping by!
-</p class="center">
- <br/>  
-<br/>  
 
 
 
 
+<div class="post__content">
+
+		<div class="entry-content">
+
+			<p><strong><span class="&quot;dropcap">I'm </span> passionate about creating beautiful things, whether they be written or visual art. </strong> Like any proper millennial, I'm working a regular 9-to-5 while also running a few side hustles– namely, freelance writing, graphic design, and social media management. </p>
+		
+			I'm always up for an exciting new project or venture. If you'd love to see my writing or design on your site, <a href="toriij13@gmail.com">email me</a>! FYI: dog pictures, beauty videos, and book recommendations always welcome.
+			<br/>  
+			
+			<h3><strong> <em> A FEW THINGS ABOUT ME: </strong> </em> </h3>
+<p>I'm a recent grad from Wesleyan University with honors in English and Feminist, Gender, & Sexuality Studies. I used most of my time at this top-ranking liberal arts institution to cultivate my obsession with reading, research, writing, overloading my schedule, and coffee. </p>
+<P>My writing has been about poetry and literature, trending pop culture, social justice, astrology and readings, queerness, mythology, socioeconomic issues, music and tv, and the many intersections between all these. </p>
+
+	</div></div>
+			
+		</div><!-- .entry-content -->
+	
+
+
+
+
+
+</main><!-- #main -->
+
+	
+				</a>
+
+	
+<link rel='stylesheet' id='all-css-0-2' href='https://s1.wp.com/wp-content/mu-plugins/carousel/jetpack-carousel.css?m=1481571546h&cssminify=yes' type='text/css' media='all' />
+<!--[if lte IE 8]>
+<link rel='stylesheet' id='jetpack-carousel-ie8fix-css'  href='https://s1.wp.com/wp-content/mu-plugins/carousel/jetpack-carousel-ie8fix.css?m=1412618825h&#038;ver=20121024' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='all-css-2-2' href='https://s1.wp.com/wp-content/mu-plugins/tiled-gallery/tiled-gallery.css?m=1443731146h&cssminify=yes' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_in":"","lang":"en","ajaxurl":"https:\/\/gemademo.wordpress.com\/wp-admin\/admin-ajax.php","nonce":"1f6a00e270","display_exif":"1","display_geo":"1","single_image_gallery":"1","single_image_gallery_media_file":"","background_color":"black","comment":"Comment","post_comment":"Post Comment","write_comment":"Write a Comment...","loading_comments":"Loading Comments...","download_original":"View full size <span class=\"photo-size\">{0}<span class=\"photo-size-times\">\u00d7<\/span>{1}<\/span>","no_comment_text":"Please be sure to submit some text with your comment.","no_comment_email":"Please provide an email address to comment.","no_comment_author":"Please provide your name to comment.","comment_post_error":"Sorry, but there was an error posting your comment. Please try again later.","comment_approved":"Your comment was approved.","comment_unapproved":"Your comment is in moderation.","camera":"Camera","aperture":"Aperture","shutter_speed":"Shutter Speed","focal_length":"Focal Length","comment_registration":"0","require_name_email":"1","login_url":"https:\/\/gemademo.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fgemademo.wordpress.com%2F2016%2F04%2F12%2Fthe-mediterranean-sun-sleeps-in-marrakech-2%2F","blog_id":"109736534","local_comments_commenting_as":"<fieldset><label for=\"email\">Email (Required)<\/label> <input type=\"text\" name=\"email\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-email-field\" \/><\/fieldset><fieldset><label for=\"author\">Name (Required)<\/label> <input type=\"text\" name=\"author\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-author-field\" \/><\/fieldset><fieldset><label for=\"url\">Website<\/label> <input type=\"text\" name=\"url\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-url-field\" \/><\/fieldset>","reblog":"Reblog","reblogged":"Reblogged","reblog_add_thoughts":"Add your thoughts here... (optional)","reblogging":"Reblogging...","post_reblog":"Post Reblog","stats_query_args":"blog=109736534&v=wpcom&tz=0&user_id=0&subd=gemademo","is_public":"0","reblog_enabled":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s2.wp.com/_static/??-eJyVkN1OwzAMRl+ILCBWEBeIZ0kTt3OaP+ykYzw93qRV1QbTuHOS7xzb0fuibE4VUtWetYMZLZSvjecHvXqKTZXQRkysA07A+rNBg51JLgDdCGMaMGE9LMVltu4giq4QRGxRjxDNcY6e0E7BHK7lfwAxO6CE36Rs45rjnRhPWFTANKkhC6gGXFbHZENzwkgMoxmBQzYO3CZiusdumKGe6GiuidUfGSdG1RuSIFcgqVSegQiP3Ze7fxoqGTvxb8vwfsi9B1svjWfdLI3zav7TWXZjvjGDNZQbQ9AeapHW6nwhzEd8f+oe355ft91L538AC5DrpA=='></script>
+<script type='text/javascript' src='https://platform.twitter.com/widgets.js?ver=20111117'></script>
+<script type='text/javascript' src='https://s2.wp.com/_static/??-eJyVy8EOwiAMANAfslYTHXowfsuAhhRLJaxI/Hu97rTs+A4PR4XwViM1LB2q9MS6oA02owZe5vDy3CJUJlT6UCONrOmYlwPuuXX7sVCENItQ+671X8/yOF9u95Ob3NXlHw12Q+E='></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script><script type="text/javascript">
+			jQuery.extend( infiniteScroll.settings.scripts, ["jquery-core","jquery-migrate","jquery","mobile-useragent-info","postmessage","jquery_inview","jetpack_resize","spin","jquery.spin","grofiles-cards","wpgroho","devicepx","jetpack_likes_queuehandler","the-neverending-homepage","bricklayer","gema-modernizr","gema-skip-link-focus-fix","imagesloaded","gema-scripts","wpcom-masterbar-js","wpcom-masterbar-tracks-js","swfobject","videopress","jetpack-carousel","twitter-widgets","twitter-widgets-infinity","twitter-widgets-pending","tiled-gallery"] );
+			jQuery.extend( infiniteScroll.settings.styles, ["wpcom-smileys","jetpack_likes","the-neverending-homepage","wpcom-core-compat-playlist-styles","mp6hacks","wpcom-bbpress2-staff-css","gema-style","gema-fonts-montserrat","gema-fonts-butler","genericons","jetpack-social-menu","wpcom_instagram_widget","jetpack-widget-social-icons-styles","noticons","geo-location-flair","reblogging","h4-global","jetpack-carousel","tiled-gallery","jetpack-carousel-ie8fix"] );
+		</script><script src="//stats.wp.com/w.js?56" type="text/javascript" async defer></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'109736534','blog_tz':'0','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'109736534','v':'wpcom','tz':'0','user_id':'0','subd':'gemademo'}]);
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1oV0pFNEwueXFaVXlyMGwvVG9bYmZXaDJ1NmxaNzJ2cyYwTl85emxZLnVULS15OCV8TjJoQXhDcjclOThnNkQlZmJQcy02YTVdSEJTU1tfP2slVzBOTW94WE4lQS9ITFZISmdNb2JPflIvLG1bUXJSOWF8c3c/TldYVTR8WEEtei0rZixVTHRPWGsyMk5wZy9vU1duQkNpdXNZLGRRfGQuQS49QVV4a2J6RjJvSlV3Ny9haU5Nc1JWak5nK3VRRURCQkFwc29vX29dMmx+NW9hTD0lRmlDUDQ/b1VOJWlWJlBobjBPSg=='}]);
+_stq.push([ 'clickTrackerInit', '109736534', '0' ]);
+	</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
 </body>
 </html>
